@@ -1,0 +1,57 @@
+vl_svmtrain: parameters (verbosity: 1)
+	data dimension: 1024
+	num samples: 15
+	lambda: 0.0666667 (C equivalent: 1)
+	loss function: hinge
+	max num iterations: 1500
+	epsilon: 0.001
+	diagnostic frequency: 15
+	using custom weights: no
+	bias multiplier: 1
+	solver: sdca
+vl_svmtrain: iteration: 255 (epoch: 17)
+	time elapsed: 0.000469
+	objective: 0.478941 (regul: 0.195193, loss: 0.283748)
+	dual objective: 0.478191 (dual loss: 0.673385)
+	duality gap: 0.000749986
+	status: converged
+class BACKGROUND_Google AP 100.00; AP 11 100.00
+vl_svmtrain: parameters (verbosity: 1)
+	data dimension: 1024
+	num samples: 15
+	lambda: 0.0666667 (C equivalent: 1)
+	loss function: hinge
+	max num iterations: 1500
+	epsilon: 0.001
+	diagnostic frequency: 15
+	using custom weights: no
+	bias multiplier: 1
+	solver: sdca
+vl_svmtrain: iteration: 240 (epoch: 16)
+	time elapsed: 0.000462
+	objective: 0.56094 (regul: 0.142223, loss: 0.418716)
+	dual objective: 0.560026 (dual loss: 0.70225)
+	duality gap: 0.000913536
+	status: converged
+class Faces AP 44.26; AP 11 49.33
+vl_svmtrain: parameters (verbosity: 1)
+	data dimension: 1024
+	num samples: 15
+	lambda: 0.0666667 (C equivalent: 1)
+	loss function: hinge
+	max num iterations: 1500
+	epsilon: 0.001
+	diagnostic frequency: 15
+	using custom weights: no
+	bias multiplier: 1
+	solver: sdca
+vl_svmtrain: iteration: 225 (epoch: 15)
+	time elapsed: 0.000439
+	objective: 0.575279 (regul: 0.125796, loss: 0.449483)
+	dual objective: 0.574621 (dual loss: 0.700418)
+	duality gap: 0.000658024
+	status: converged
+class Faces_easy AP 88.50; AP 11 89.55
+mean accuracy: 0.533333
+
+mAP: 77.59 %; mAP 11: 79.63
