@@ -1,3 +1,5 @@
+% it is a ssh test
+
 function recognition_demo(varargin)
 % RECOGNITION_DEMO  Demonstrates using VLFeat for image classification
 
