@@ -26,5 +26,5 @@ for i = 1:desc_info(2)
 end
 
 % esti_corr_mat = dist_matrix< 1.0;
-save('vlad_NC_corr_matrix.mat', 'corr_matrix')
+save('bovw_CC_corr_matrix.mat', 'corr_matrix')
 imshow(corr_matrix)

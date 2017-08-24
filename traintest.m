@@ -7,8 +7,8 @@ if ~exist('vl_version')
 end
 
 opts.dataset = 'Places' ;
-opts.prefix = 'vlad' ;
-opts.encoderParams = {'type', 'vlad'} ;
+opts.prefix = 'bovw' ;
+opts.encoderParams = {'type', 'bovw'} ;
 opts.seed = 1 ;
 opts.lite = false ;
 opts.C = 1 ;
@@ -77,7 +77,7 @@ else
 end
 
 % descrs = encodeImage(encoder, fullfile(imdb.imageDir, imdb.images.name), 'cacheDir', opts.cacheDir) ;
-test_files = textread('c:/Users/DONGWON/Downloads/vlfeat-0.9.20-bin.tar/vlfeat-0.9.20/apps/recognition/data/Places/TestImages.txt','%s','delimiter','\n');
+test_files = textread('c:/Users/DONGWON/Downloads/vlfeat-0.9.20-bin.tar/vlfeat-0.9.20/apps/recognition/TestImages.txt','%s','delimiter','\n');
 
 descrs = encodeImage(encoder, test_files, 'cacheDir', opts.cacheDir) ;
 save('descrs.mat', 'descrs')
