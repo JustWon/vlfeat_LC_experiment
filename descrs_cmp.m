@@ -1,4 +1,5 @@
-clear;
+function descrs_cmp(method, dataset)
+
 descrs = load('descrs.mat');
 
 desc_info = size(descrs.descrs)
@@ -26,5 +27,5 @@ for i = 1:desc_info(2)
 end
 
 % esti_corr_mat = dist_matrix< 1.0;
-save('bovw_CC_corr_matrix.mat', 'corr_matrix')
+save(strcat(method,'_',dataset,'_corr_matrix.mat'), 'corr_matrix')
 imshow(corr_matrix)

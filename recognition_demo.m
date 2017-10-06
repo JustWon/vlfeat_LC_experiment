@@ -1,4 +1,4 @@
-function recognition_demo(varargin)
+function recognition_demo(method,varargin)
 % RECOGNITION_DEMO  Demonstrates using VLFeat for image classification
 
 if ~exist('vl_version')
@@ -7,8 +7,8 @@ if ~exist('vl_version')
 end
 
 opts.dataset = 'Places' ;
-opts.prefix = 'bovw' ;
-opts.encoderParams = {'type', 'bovw'} ;
+opts.prefix = method ;
+opts.encoderParams = {'type', method} ;
 opts.seed = 1 ;
 opts.lite = false ;
 opts.C = 1 ;
